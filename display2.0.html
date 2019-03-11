@@ -1,0 +1,85 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Project 1</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        .google-map {
+            width : 50%;
+            height: 150px;
+        }
+        .information {
+            display: none;
+            
+        }
+        .information p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="itinerarySection">
+        <div class="row">
+            <div class="col-12">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="Index.html"><button type="button" class="btn btn-primary">Ready to view your intinerary?</button></a>
+    </div>
+
+    <div class="modal" id="itineraryModal" tabindex="-1" role="dialog" aria-labelledby="itineraryModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="itineraryModalTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Dates:</p>
+                    <select class="form-control" id="itineraryDates">
+                        
+                    </select>
+                    <p>Times:</p>
+                    <select class="form-control" id="itinearyTimes">
+                        <option value="8:00 am">8:00 am</option>
+                        <option value="9:00 am">9:00 am</option>
+                        <option value="10:00 am">10:00 am</option>
+                        <option value="11:00 am">11:00 am</option>
+                        <option value="12:00 pm">12:00 pm</option>
+                        <option value="1:00 pm">1:00 pm</option>
+                        <option value="2:00 pm">2:00 pm</option>
+                        <option value="3:00 pm">3:00 pm</option>
+                        <option value="4:00 pm">4:00 pm</option>
+                        <option value="5:00 pm">5:00 pm</option>
+                        <option value="6:00 pm">6:00 pm</option>
+                        <option value="7:00 pm">7:00 pm</option>
+                        <option value="8:00 pm">8:00 pm</option>
+                        <option value="9:00 pm">9:00 pm</option>
+                        <option value="10:00 pm">10:00 pm</option>
+                        <option value="11:00 pm">11:00 pm</option>
+                        <option value="12:00 am">12:00 am</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="itineraryPush">Save changes</button>
+                </div>
+            </div>
+        </div>   
+    </div> 
+     
+<!-- scripts for JS -->
+<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key="
+    async defer></script>
+<script type="text/javascript" src="assets/api2.0.js"></script>
+</body>
+</html>
